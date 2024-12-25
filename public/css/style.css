@@ -1,0 +1,314 @@
+.custom_logo{
+    width: 10px ;
+}
+
+.filtro_estado{
+    width: 15%;
+}
+
+.container_doctores{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 30px;
+}
+
+.container_historial{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 20px;
+}
+
+.emergencia-contenedor{
+    display: flex;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+
+}
+
+.involucrados , .detalle{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    align-items: center;
+}
+
+
+/* REGSITRO */
+
+
+
+.contenedor_registro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.contenedor_registro form {
+    width: 100%;
+    max-width: 800px; 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    width: 100%;
+}
+
+.put {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px; 
+    width: 100%; 
+}
+
+.put1, .put2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formularios_pacientes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.paciente-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.paciente_card {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.paciente_card h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #374151;
+}
+
+.paciente_card label {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.paciente_card input, .paciente_card select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+button[type="submit"] {
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2563eb;
+}
+
+
+
+/* ----------------------------------------MediaQry---------------------------------------- */
+@media (max-width: 640px) {
+    .filtro_estado {
+        width: 100%; 
+    }
+
+    .container_doctores {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    table {
+        font-size: 0.8rem; 
+    }
+
+    th, td {
+        padding: 5px; 
+    }
+
+    .paciente_card {
+        font-size: 0.9rem; 
+    }
+
+    .formularios_pacientes {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .filtro_estado {
+        width: 50%; 
+    }
+
+    .container_doctores {
+        gap: 1.5rem; 
+    }
+
+    table {
+        font-size: 0.9rem; 
+    }
+
+    .formularios_pacientes {
+        width: 90%;
+    }
+
+    .paciente_card {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .container_doctores {
+        justify-content: space-between; 
+    }
+
+    .formularios_pacientes {
+        width: 70%; 
+    }
+}
+
+@media (min-width: 640px) and (max-width: 940px) {
+    .filtro_estado {
+        width: 40%; 
+        margin-bottom: 1rem; 
+    }
+
+    .container_doctores {
+        flex-wrap: wrap; 
+        gap: 1.5rem; 
+    }
+
+    table {
+        font-size: 0.9rem; 
+    }
+
+    th, td {
+        padding: 8px; 
+    }
+
+    .formularios_pacientes {
+        width: 90%;
+    }
+
+    .paciente_card {
+        font-size: 1rem;
+    }
+}
+
+/*  */
+
+@media (max-width: 640px) {
+    .emergencia-contenedor {
+        flex-direction: column; 
+        padding: 15px;
+    }
+
+    .detalle, .involucrados {
+        width: 100%; 
+        min-width: auto;
+    }
+
+    table {
+        font-size: 0.8rem; 
+    }
+
+    th, td {
+        padding: 8px; 
+    }
+}
+
+
+@media (min-width: 641px) and (max-width: 940px) {
+    .emergencia-contenedor {
+        gap: 1rem;
+    }
+
+    .detalle, .involucrados {
+        flex: 1; 
+        min-width: 200px; 
+    }
+
+    table {
+        font-size: 0.9rem; 
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+/*  */
+
+@media (max-width: 640px) {
+    .contenedor_registro form {
+        padding: 15px;
+    }
+
+    .paciente_card input, .paciente_card select {
+        font-size: 0.85rem; 
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 940px) {
+    .contenedor_registro form {
+        max-width: 700px;
+    }
+
+    .detalle {
+        gap: 20px;
+    }
+
+    .paciente_card input, .paciente_card select {
+        font-size: 0.9rem;
+    }
+}
